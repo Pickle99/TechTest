@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.user {
+  background-color: #dabac4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  margin: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0.4em 0.4em 0.3em 0.2em rgba(8, 0, 0, 0.24);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 15rem;
+  border-radius: 50%;
+}
+a {
+  max-width: max-content;
+  display: flex;
+  cursor: pointer;
+}
+body {
+  background-color: rgb(218, 121, 121);
+}
+
+.user-inner {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diver-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.html-url {
+  color: rgb(133, 111, 111);
+  font-size: 1.2em;
+}
+
+.user:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.12);
+  transition: transform 0.3s;
+}
+
+.login-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 1.2em;
+}
+
+.desc-bar {
+  display: flex;
+  letter-spacing: 0.1em;
+}
+.desc-bar p {
+  padding: 0 0.5em 0 0;
+  background-color: rgb(172, 147, 147);
+}
+
+.desc-info {
+  padding: 0.4em;
+}
+
+.desc-info p {
+  padding: 0.8em;
+  display: flex;
+  white-space: nowrap;
+}
+
+.login-div div {
+  padding-left: 0.65em;
+}
+
+.html-url:hover {
+  cursor: pointer;
+  color: rgb(124, 124, 119);
+  transform: scale(1.65);
+  transition: transform 3.3s;
+}
+
+.copy-alert {
+  color: rgb(43, 119, 46);
+}
+
+@media screen and (max-width: 1400px) {
+  .user {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1272px) {
+  .user {
+    font-size: 12px;
+  }
+  img {
+    width: 15em;
+  }
+  .diver-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  img {
+    width: 20vh;
+  }
+}
+
+@media screen and (max-width: 697px) {
+  .user {
+    font-size: 12px;
+  }
+  img {
+    width: 15vh;
+  }
+  .diver-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
