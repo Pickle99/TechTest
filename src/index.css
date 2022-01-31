@@ -4,12 +4,19 @@
   align-items: center;
   justify-content: center;
   border-radius: 1em;
-  margin: 5%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 0.4em 0.4em 0.3em 0.2em rgba(8, 0, 0, 0.24);
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+}
+.cont {
+  padding: 1em;
+}
+
+.cont-2 {
   display: flex;
   justify-content: center;
 }
@@ -28,8 +35,7 @@ body {
 }
 
 .user-inner {
-  padding: 2em;
-  width: 100%;
+  padding: 2em 0.7em 0.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +43,7 @@ body {
 
 .diver-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .desc {
@@ -97,7 +103,7 @@ img:hover {
 .html-url:hover {
   cursor: pointer;
   color: rgb(124, 124, 119);
-  transform: scale(1.65);
+  transform: scale(1.35);
   transition: transform 3.3s;
 }
 
@@ -107,7 +113,7 @@ img:hover {
 
 @media screen and (max-width: 1400px) {
   .user {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -132,13 +138,33 @@ img:hover {
 
 @media screen and (max-width: 697px) {
   .user {
-    font-size: 12px;
+    font-size: 14px;
   }
   img {
-    width: 15vh;
+    width: 24vh;
   }
   .diver-2 {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .desc-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .desc-info p {
+    padding: 0.8em;
+    margin: -3px;
+    justify-content: center;
+  }
+  .desc-info div {
+    padding: -15px;
+    margin: -15px;
+  }
+  .user {
+    padding: 1em;
+  }
+  .box-3 {
+    grid-column: 1 / 3;
   }
 }
